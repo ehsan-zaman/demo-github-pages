@@ -21,13 +21,10 @@ nav_order: 1
 This endpoint is for uploading document for further tasks like validating the document, inviting the signers, check the status of the document and downloading the document.
 
 ## Endpoint
-/api/document/upload.json
 
-## Method
-POST
-
-## Header
-Content-Type: application/json
+| Path                | /api/document/upload.json   |
+| Method              | POST                        |
+| Request Body Schema | application/json            |
 
 ## Request Body Parameters
 
