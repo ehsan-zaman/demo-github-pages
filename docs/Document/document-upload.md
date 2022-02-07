@@ -45,7 +45,7 @@ This endpoint is for uploading document for further tasks like validating the do
 | :---         | :---                                              | :---        | :---            |
 | access_token | API Access Token                                  | Mandatory   | String          |
 | access       | Document access. Possible values: public, private | Mandatory   | String          |
-| file         | File object that will be uploaded                 | Mandatory   | Object          |
+| file         | File object that will be uploaded [details](#request-file-object-description)       | Mandatory   | Object          |
 | signers      | Array containing signer objects                   | Mandatory   | Array of Object |
 
 ### Request File Object Description
