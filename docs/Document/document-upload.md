@@ -41,13 +41,27 @@ This endpoint is for uploading document for further tasks like validating the do
 
 ## Request Body Parameter Description
 
-| Key | Description | Requirement | Type |
-| :--- | :--- | :--- | :--- |
-| access_token | API Access Token | Mandatory | String |
-| access | Document access. Possible values: public, private | Mandatory | String |
-| file | File object that will be uploaded | Mandatory | Object |
-| signers | Array containing signer objects | Mandatory | Array of Object |
+| Key          | Description                                       | Requirement | Type            |
+| :---         | :---                                              | :---        | :---            |
+| access_token | API Access Token                                  | Mandatory   | String          |
+| access       | Document access. Possible values: public, private | Mandatory   | String          |
+| file         | File object that will be uploaded                 | Mandatory   | Object          |
+| signers      | Array containing signer objects                   | Mandatory   | Array of Object |
 
 #### File Object Description
 
+| Key          | Description                             | Requirement | Type    |
+| :---         | :---                                    | :---        | :---    |
+| filename     | Name of the file                        | Mandatory   | String  |
+| content      | Base64 encoded file content             | Mandatory   | String  |
+| callbackUrl  | Callback URL to send uuid after signing | Optional    | String  |
+
 #### Signer Object Description
+
+| Key        | Description                                                                         | Requirement | Type    |
+| :---       | :---                                                                                | :---        | :---    |
+| name       | Signer's name                                                                       | Mandatory   | String  |
+| surname    | Signer's surname                                                                    | Mandatory   | String  |
+| email      | Signer's email                                                                      | Mandatory   | String  |
+| successUrl | Document upload success redirection URL                                             | Optional    | String  |
+| noEmail    | If TRUE them email with invitation URL will not be sent to signer (default: false)  | Optional    | Boolean |
