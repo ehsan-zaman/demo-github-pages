@@ -5,6 +5,7 @@ has_children: true
 ---
 
 # Document
+{: .no_toc }
 
 <details open markdown="block">
   <summary>
