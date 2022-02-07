@@ -22,6 +22,7 @@ This endpoint is for uploading document for further tasks like validating the do
 
 ## Endpoint
 
+| ---                 | ---                         |
 | Path                | /api/document/upload.json   |
 | Method              | POST                        |
 | Request Body Schema | application/json            |
