@@ -39,7 +39,7 @@ This endpoint is for uploading document for further tasks like validating the do
   </tbody>
 </table>
 
-## Request Body Parameters
+## Request Body Parameter Description
 
 | Key | Description | Requirement | Type |
 | :--- | :--- | :--- | :--- |
@@ -47,3 +47,7 @@ This endpoint is for uploading document for further tasks like validating the do
 | access | Document access. Possible values: public, private | Mandatory | String |
 | file | File object that will be uploaded | Mandatory | Object |
 | signers | Array containing signer objects | Mandatory | Array of Object |
+
+#### File Object Description
+
+#### Signer Object Description
