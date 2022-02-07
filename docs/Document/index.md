@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Document
+has_toc: false
 has_children: true
 ---
 
