@@ -1,5 +1,5 @@
 ---
 layout: default
-title: UI Components
+title: Document
 has_children: true
 ---
