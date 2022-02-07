@@ -4,6 +4,8 @@ title: Document
 has_children: true
 ---
 
+# Document
+
 <details open markdown="block">
   <summary>
     Table of contents
