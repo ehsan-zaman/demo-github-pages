@@ -22,6 +22,14 @@ This endpoint is for uploading document for further tasks like validating the do
 
 ## Endpoint
 
+<table>
+  <tbody>
+    <tr>
+      <td>Demo</td>
+    </tr>
+  </tbody>
+</table>
+
 | ---                 | ---                         |
 | Path                | /api/document/upload.json   |
 | Method              | POST                        |
