@@ -1,7 +1,8 @@
 ---
 layout: default
-title: init auth
+title: Document Upload
+parent: Document
 nav_order: 1
 ---
 
-# init auth
+# Document Upload
