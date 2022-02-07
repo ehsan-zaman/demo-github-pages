@@ -30,8 +30,9 @@ POST
 Content-Type: application/json
 
 ## Request Body Parameters
-|head1	|head2	|h3	|H4	|h5	|
-|---	|---	|---	|---	|---	|
-|v1|v2|v3|v4|v5|
-|   	|   	|   	|   	|   	|
-|   	|   	|   	|   	|   	|
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
