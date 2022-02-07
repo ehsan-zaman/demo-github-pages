@@ -48,7 +48,7 @@ This endpoint is for uploading document for further tasks like validating the do
 | file         | File object that will be uploaded                 | Mandatory   | Object          |
 | signers      | Array containing signer objects                   | Mandatory   | Array of Object |
 
-#### Request File Object Description
+### Request File Object Description
 
 | Key          | Description                             | Requirement | Type    |
 | :---         | :---                                    | :---        | :---    |
@@ -56,7 +56,7 @@ This endpoint is for uploading document for further tasks like validating the do
 | content      | Base64 encoded file content             | Mandatory   | String  |
 | callbackUrl  | Callback URL to send uuid after signing | Optional    | String  |
 
-#### Request Signer Object Description
+### Request Signer Object Description
 
 | Key        | Description                                                                         | Requirement | Type    |
 | :---       | :---                                                                                | :---        | :---    |
