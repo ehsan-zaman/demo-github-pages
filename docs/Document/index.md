@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Document
-has_toc: false
 has_children: true
 ---
 
@@ -16,3 +15,6 @@ has_children: true
 1. TOC
 {:toc}
 </details>
+
+## H1
+## H2
