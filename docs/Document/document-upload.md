@@ -64,7 +64,7 @@ This endpoint is for uploading document for further tasks like validating the do
 | surname    | Mandatory   | String  | Signer's surname                                                                   |
 | email      | Mandatory   | String  | Signer's email                                                                     |
 | successUrl | Optional    | String  | Document upload success redirection URL                                            |
-| noEmail    | Optional    | Boolean | If TRUE them email with invitation URL will not be sent to signer (default: false) |
+| noEmail    | Optional    | Boolean | If TRUE them email with invitation URL will not be sent to signer (default: FALSE) |
 
 ## Response Body Parameter Description
 
