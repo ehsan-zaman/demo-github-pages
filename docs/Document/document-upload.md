@@ -6,7 +6,7 @@ has_toc: true
 nav_order: 1
 ---
 
-# Document Upload
+# Document upload
 {: .no_toc }
 
 <details open markdown="block">
@@ -39,16 +39,16 @@ This endpoint is for uploading document for further tasks like validating the do
   </tbody>
 </table>
 
-## Request Body Parameter Description
+## Request body parameter description
 
 | Key          |  Requirement | Type            | Description                                                                                                             |
 | :---         |  :---        | :---            | :---                                                                                                                    |
 | access_token |  Mandatory   | String          | API Access Token                                                                                                        |
 | access       |  Mandatory   | String          | Document access. Possible values: public, private                                                                       |
-| file         |  Mandatory   | Object          | File object that will be uploaded. Follow [Request File Object Description](#request-file-object-description) section   |
-| signers      |  Mandatory   | Array of Objects | Array containing signer objects. Follow [Request Signer Object Description](#request-signer-object-description) section |
+| file         |  Mandatory   | Object          | File object that will be uploaded. Follow [Request file object description](#request-file-object-description) section   |
+| signers      |  Mandatory   | Array of Objects | Array containing signer objects. Follow [Request signer object description](#request-signer-object-description) section |
 
-### Request File Object Description
+### Request file object description
 
 | Key          | Requirement | Type    | Description                             |
 | :---         | :---        | :---    | :---                                    |
@@ -56,7 +56,7 @@ This endpoint is for uploading document for further tasks like validating the do
 | content      | Mandatory   | String  | Base64 encoded file content             |
 | callbackUrl  | Optional    | String  | Callback URL to send uuid after signing |
 
-### Request Signer Object Description
+### Request signer object description
 
 | Key        | Requirement | Type    | Description                                                                             |
 | :---       | :---        | :---    | :---                                                                                    |
@@ -66,15 +66,15 @@ This endpoint is for uploading document for further tasks like validating the do
 | successUrl | Optional    | String  | Document upload success redirection URL                                                 |
 | noEmail    | Optional    | Boolean | If `true` them email with invitation URL will not be sent to signer (default: `false`)  |
 
-## Response Body Parameter Description
+## Response body parameter description
 
 | Key      | Type              | Description                                                                                                                                                                     |
 | :---     | :---              | :---                                                                                                                                                                           |
 | status   | String            | Status of the request, `ok` if suucess, otherwise `error`                                                                                                                       |
 | message  | String            | Status message                                                                                                                                                                 |
-| signers  | Array of Objects  | Array containing signer objects that was provided in request along with other infos. Follow [Response Signer Object Description](#response-signer-object-description) section |
+| signers  | Array of Objects  | Array containing signer objects that was provided in request along with other infos. Follow [Response signer object description](#response-signer-object-description) section |
 
-### Response Signer Object Description
+### Response signer object description
 
 | Key            | Type    | Description                                                                       |
 | :---           | :---    | :---                                                                              |
@@ -82,7 +82,7 @@ This endpoint is for uploading document for further tasks like validating the do
 | surname        | String  | Signer's surname                                                                  |
 | invitationUrl  | String  | URL to re-invite this signer. Non null value if `noEmail` is `false`, else `null` |
 
-## Sample Request
+## Sample request
 
 ```
 {
@@ -90,7 +90,7 @@ This endpoint is for uploading document for further tasks like validating the do
         "access_token": "f4b79b72-7587-f417-41f8-2de5a7c87fae",
         "access": "private",
         "file": {
-            "filename": "BlankTab.pdf",
+            "filename": "demo.pdf",
             "content": "JVBERi0xLjUKJbXtrvsKNzYgMCBvYmoKPDwgL0xlbmd0a..............JlYW0KZW5kb2JqCnN0YXJ0eHJlZgo1MDg5MwolJUVPRgo="
         },
         "signers": [{
@@ -107,7 +107,7 @@ This endpoint is for uploading document for further tasks like validating the do
     }
 }
 ```
-## Sample Response
+## Sample response
 
 ```
 {
