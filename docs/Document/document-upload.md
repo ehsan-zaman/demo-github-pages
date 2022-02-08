@@ -68,11 +68,11 @@ This endpoint is for uploading document for further tasks like validating the do
 
 ## Response Body Parameter Description
 
-| Key      | Type              | Description                                                                                                                                                             |
-| :---     | :---              | :---                                                                                                                                                                   |
-| status   | String            | Status of the request, `ok` if suucess, otherwise `error`                                                                                                               |
-| message  | String            | Status message                                                                                                                                                         |
-| signers  | Array of Objects  | Array containing signer objects that was provided in request along with other infos. Follow [Response Signer Object Description](#response-signer-object-description) |
+| Key      | Type              | Description                                                                                                                                                                     |
+| :---     | :---              | :---                                                                                                                                                                           |
+| status   | String            | Status of the request, `ok` if suucess, otherwise `error`                                                                                                                       |
+| message  | String            | Status message                                                                                                                                                                 |
+| signers  | Array of Objects  | Array containing signer objects that was provided in request along with other infos. Follow [Response Signer Object Description](#response-signer-object-description) section |
 
 ### Response Signer Object Description
 
