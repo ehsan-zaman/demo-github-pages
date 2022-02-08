@@ -82,3 +82,26 @@ This endpoint is for uploading document for further tasks like validating the do
 | surname        | String  | Signer's surname          |
 | invitationUrl  | String  | URL to invite this signer |
 
+## Sample Request
+
+```
+{
+    "access_token": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "access": "private",
+    "file": {
+        "filename": "demo.pdf",
+        "content": "JVBERi0xLjUKJbXtrvsKNzYgMCBvYmoKPDwgL0xlbmd0a..............JlYW0KZW5kb2JqCnN0YXJ0eHJlZgo1MDg5MwolJUVPRgo="
+    },
+    "signers": [{
+        "name": "Tex",
+        "surname": "Ryta",
+        "email": "tex.ryta@domain.com",
+        "noEmail": true
+    }, {
+        "name": "John",
+        "surname": "Quil",
+        "email": "john.quil@domain.com",
+        "noEmail": true
+    }]
+}
+```
