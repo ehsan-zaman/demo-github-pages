@@ -41,27 +41,44 @@ This endpoint is for uploading document for further tasks like validating the do
 
 ## Request Body Parameter Description
 
-| Key          | Description                                                                                                             | Requirement | Type            |
-| :---         | :---                                                                                                                    | :---        | :---            |
-| access_token | API Access Token                                                                                                        | Mandatory   | String          |
-| access       | Document access. Possible values: public, private                                                                       | Mandatory   | String          |
-| file         | File object that will be uploaded. Follow [Request File Object Description](#request-file-object-description) section   | Mandatory   | Object          |
-| signers      | Array containing signer objects. Follow [Request Signer Object Description](#request-signer-object-description) section | Mandatory   | Array of Object |
+| Key          |  Requirement | Type            | Description                                                                                                             |
+| :---         |  :---        | :---            | :---                                                                                                                    |
+| access_token |  Mandatory   | String          | API Access Token                                                                                                        |
+| access       |  Mandatory   | String          | Document access. Possible values: public, private                                                                       |
+| file         |  Mandatory   | Object          | File object that will be uploaded. Follow [Request File Object Description](#request-file-object-description) section   |
+| signers      |  Mandatory   | Array of Object | Array containing signer objects. Follow [Request Signer Object Description](#request-signer-object-description) section |
 
 ### Request File Object Description
 
-| Key          | Description                             | Requirement | Type    |
-| :---         | :---                                    | :---        | :---    |
-| filename     | Name of the file                        | Mandatory   | String  |
-| content      | Base64 encoded file content             | Mandatory   | String  |
-| callbackUrl  | Callback URL to send uuid after signing | Optional    | String  |
+| Key          | Requirement | Type    | Description                             |
+| :---         | :---        | :---    | :---                                    |
+| filename     | Mandatory   | String  | Name of the file                        |
+| content      | Mandatory   | String  | Base64 encoded file content             |
+| callbackUrl  | Optional    | String  | Callback URL to send uuid after signing |
 
 ### Request Signer Object Description
 
-| Key        | Description                                                                         | Requirement | Type    |
-| :---       | :---                                                                                | :---        | :---    |
-| name       | Signer's name                                                                       | Mandatory   | String  |
-| surname    | Signer's surname                                                                    | Mandatory   | String  |
-| email      | Signer's email                                                                      | Mandatory   | String  |
-| successUrl | Document upload success redirection URL                                             | Optional    | String  |
-| noEmail    | If TRUE them email with invitation URL will not be sent to signer (default: false)  | Optional    | Boolean |
+| Key        | Requirement | Type    | Description                                                                        |
+| :---       | :---        | :---    | :---                                                                               |
+| name       | Mandatory   | String  | Signer's name                                                                      |
+| surname    | Mandatory   | String  | Signer's surname                                                                   |
+| email      | Mandatory   | String  | Signer's email                                                                     |
+| successUrl | Optional    | String  | Document upload success redirection URL                                            |
+| noEmail    | Optional    | Boolean | If TRUE them email with invitation URL will not be sent to signer (default: false) |
+
+## Response Body Parameter Description
+
+| Key      | Type              | Description                                                                                                                                                             |
+| :---     | :---              | :---                                                                                                                                                                   |
+| status   | String            | Status of the request, `ok` if suucess, otherwise `error`                                                                                                               |
+| message  | String            | Status message                                                                                                                                                         |
+| signers  | Array of Objects  | Array containing signer objects that was provided in request along with other infos. Follow [Response Signer Object Description](#response-signer-object-description) |
+
+### Response Signer Object Description
+
+| Key            | Type    | Description               |
+| :---           | :---    | :---                      |
+| name           | String  | Signer's name             |
+| surname        | String  | Signer's surname          |
+| invitationUrl  | String  | URL to invite this signer |
+
