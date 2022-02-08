@@ -126,3 +126,7 @@ This endpoint is for uploading document for further tasks like validating the do
     }]
 }
 ```
+
+## Working with SDK php-client
+
+`AppBundle\GatewaySDKPhp\RequestBuilder\DocumentUploadRequestBuilder` class have to be used to build the request. All the methods for building the request are included in the class.
