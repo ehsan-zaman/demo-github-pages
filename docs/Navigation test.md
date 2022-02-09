@@ -33,7 +33,7 @@ nav_order: 1
 
 ### `public abstract getRequestBuilder()`
 
-returns void
+*returns* void
 
 Gets Req Builder
 
@@ -44,7 +44,7 @@ Gets Req Builder
 
 ### `public abstract getRequestBuilder()`
 
-returns void
+*returns* void
 
 Gets Req Builder
 
