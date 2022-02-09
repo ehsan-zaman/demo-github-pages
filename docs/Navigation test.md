@@ -29,24 +29,14 @@ nav_order: 1
 
 ## Methods
 
-<div>
-
 ### `public abstract getRequestBuilder()`
 
 *returns* void
 
 Gets Req Builder
 
-</div>
-{: .my-3 }
-
-<div>
-
 ### `public abstract getRequestBuilder()`
 
 *returns* void
 
 Gets Req Builder
-
-</div>
-{: .my-3 }
