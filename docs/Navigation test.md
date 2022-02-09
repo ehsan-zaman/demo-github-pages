@@ -18,7 +18,7 @@ nav_order: 1
 {:toc}
 </details>
 
-# Properties
+## Properties
 
 | Visibility | Type | Name | Description |
 | :--- | :--- | :--- | :--- |
@@ -27,11 +27,11 @@ nav_order: 1
 | private | Psr\Log\LoggerInterface | logger |  |
 
 
-# Methods
+## Methods
 
 <div>
 
-**`public abstract getRequestBuilder()`**
+### `public abstract getRequestBuilder()`
 
 returns void
 
@@ -42,7 +42,7 @@ Gets Req Builder
 
 <div>
 
-**`public abstract getRequestBuilder()`**
+### `public abstract getRequestBuilder()`
 
 returns void
 
