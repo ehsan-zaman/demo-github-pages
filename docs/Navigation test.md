@@ -18,14 +18,13 @@ nav_order: 1
 {:toc}
 </details>
 
-## Properties
+# Properties
 
-<div>
+| Visibility | Type | Name | Description |
+| :--- | :--- | :--- | :--- |
+| private | string | apiKey |  |
+| private | AppBundle\GatewaySDKPhp\ConnectorInterface | connector |  |
+| private | Psr\Log\LoggerInterface | logger |  |
 
-visibility type
 
-Name
-
-description
-</div>
-{: .d-flex }
+# Methods
