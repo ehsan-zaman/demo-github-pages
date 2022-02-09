@@ -21,10 +21,11 @@ nav_order: 1
 ## Properties
 
 <div>
-{: .d-flex }
+
 visibility type
 
 Name
 
 description
 </div>
+{: .d-flex }
