@@ -1,6 +1,6 @@
 ---
 layout: default
-title: AppBundle\GatewaySDKPhp\Client
+title: GatewaySDKPhp\Client
 parent: Document
 has_toc: true
 nav_order: 1
