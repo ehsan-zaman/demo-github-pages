@@ -11,12 +11,13 @@ nav_order: 1
 
 <div class="fs-6">
   <span class="fw-300">Extends</span>
-  <span>`AppBundle\GatewaySDKPhp\NoClass`</span>
+  <span><code>AppBundle\GatewaySDKPhp\NoClass</code></span>
 </div>
 <div class="fs-6">
   <span class="fw-300">Implements</span>
-  <span>`AppBundle\GatewaySDKPhp\NoInterface`</span>
+  <span><code>AppBundle\GatewaySDKPhp\NoInterface</code></span>
 </div>
+</br>
 
 <details open markdown="block">
   <summary>
