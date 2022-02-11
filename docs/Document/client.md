@@ -8,7 +8,12 @@ nav_order: 1
 
 # `AppBundle\GatewaySDKPhp\Client`
 {: .no_toc }
-Extends
+
+<div class="fs-6">
+  <span class="fw-300">Extends</span>
+  <span>Extends</span>
+</div>
+
 {: .fw-300 .fs-6 }
 `SomeClass`
 {: .fs-6 }
