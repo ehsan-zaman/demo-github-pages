@@ -10,7 +10,6 @@ nav_order: 1
 {: .no_toc }
 
 Extends `AppBundle\GatewaySDKPhp\NoClass`
-{: .fw-300 .fs-6 }
 Implements `AppBundle\GatewaySDKPhp\NoInterface`
 {: .fw-300 .fs-6 }
 
