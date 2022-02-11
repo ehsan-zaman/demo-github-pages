@@ -7,9 +7,15 @@ nav_order: 1
 ---
 
 # `AppBundle\GatewaySDKPhp\Client`
-Extends `SomeClass`
-Implements `SomeClass`
 {: .no_toc }
+Extends
+{: .fw-300 .fs-6 }
+`SomeClass`
+
+Implements
+{: .fw-300 .fs-6 }
+`SomeClass`
+
 
 <details open markdown="block">
   <summary>
