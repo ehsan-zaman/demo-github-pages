@@ -11,7 +11,7 @@ nav_order: 1
 Extends
 {: .fw-300 .fs-6 }
 `SomeClass`
-{: .d-inline-block }
+{: .fs-6 }
 
 Implements
 {: .fw-300 .fs-6 }
