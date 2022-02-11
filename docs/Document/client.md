@@ -1,16 +1,15 @@
 ---
 layout: default
-title: GatewaySDKPhp\Client
-parent: Document
+title: AppBundle\GatewaySDKPhp\Client
+parent: Class References
 has_toc: true
 nav_order: 1
 ---
 
-# `AppBundle\GatewaySDKPhp\Client`
+# AppBundle\GatewaySDKPhp\Client
 {: .no_toc }
 
-Extends `AppBundle\GatewaySDKPhp\NoClass`<br>Implements `AppBundle\GatewaySDKPhp\NoInterface`
-{: .fw-300 .fs-6 }
+
 
 <details open markdown="block">
   <summary>
@@ -25,29 +24,46 @@ Extends `AppBundle\GatewaySDKPhp\NoClass`<br>Implements `AppBundle\GatewaySDKPhp
 
 | Visibility | Type | Name | Description |
 | :--- | :--- | :--- | :--- |
-| private | string | apiKey |  |
-| private | AppBundle\GatewaySDKPhp\ConnectorInterface | connector |  |
-| private | Psr\Log\LoggerInterface | logger |  |
+| private |  | apiKey |  |
+| private |  | connector |  |
+| private |  | logger |  |
 
 
 ## Methods
 
-### `public abstract getRequestBuilder()`
+### `public __construct(string $apiKey, Psr\Log\LoggerInterface $logger)`
 
 *returns* void
 
-Gets Req Builder
+A short description
 
-### `public abstract getRequestBuilder()`
+### `public getRequestBuilder(string $apiName)`
 
 *returns* void
 
-Gets Req Builder
+A short description
 
-### Demo
+### `public getSignDocumentSmartIdRequestBuilder()`
 
-[/](/)
-[Docunent Upload](/Document/document-upload)
-[Docunent Upload](Document/document-upload)
+*returns* AppBundle\GatewaySDKPhp\RequestBuilder\SignDocumentSmartIdRequestBuilder
 
-[`code`](/Document/document-upload)
+A short description
+
+### `public postRequest(AppBundle\GatewaySDKPhp\Model\RequestInterface $request)`
+
+*returns* AppBundle\GatewaySDKPhp\Model\ResponseInterface
+
+A short description
+
+### `private getConnector()`
+
+*returns* AppBundle\GatewaySDKPhp\ConnectorInterface
+
+A short description
+
+### `private hydrateRequestBuilder(AppBundle\GatewaySDKPhp\RequestBuilder\RequestBuilderInterface $requestBuilder)`
+
+*returns* void
+
+A short description
+
