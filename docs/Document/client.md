@@ -17,7 +17,6 @@ nav_order: 1
   <span class="fw-300">Implements</span>
   <span><code>AppBundle\GatewaySDKPhp\NoInterface</code></span>
 </div>
-</br>
 
 <details open markdown="block">
   <summary>
