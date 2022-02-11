@@ -9,8 +9,7 @@ nav_order: 1
 # `AppBundle\GatewaySDKPhp\Client`
 {: .no_toc }
 
-Extends `AppBundle\GatewaySDKPhp\NoClass`
-Implements `AppBundle\GatewaySDKPhp\NoInterface`
+Extends `AppBundle\GatewaySDKPhp\NoClass`<br>Implements `AppBundle\GatewaySDKPhp\NoInterface`
 {: .fw-300 .fs-6 }
 
 <details open markdown="block">
