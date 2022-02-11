@@ -6,7 +6,9 @@ has_toc: true
 nav_order: 1
 ---
 
-# AppBundle\GatewaySDKPhp\Client
+# `AppBundle\GatewaySDKPhp\Client`
+Extends `SomeClass`
+Implements `SomeClass`
 {: .no_toc }
 
 <details open markdown="block">
